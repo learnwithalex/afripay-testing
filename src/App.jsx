@@ -1,8 +1,9 @@
-// import { BrowserRouter as Router , Route } from "react-router-dom";
-// import { Routes, Route } from "react-router-dom";
+import './assets/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import './App.css'
 import SplashScreen from './components/SplashScreen/SplashScreen'
+import Login from './components/Login/Login'
+import Signup from './components/Signup/Signup'
 
 
 function App() {
@@ -11,6 +12,15 @@ function App() {
       path: "/",
       element: <SplashScreen />,
     },
+    {
+      path: "/login",
+      element: <Login/>,
+    },
+    {
+      path: "/signup",
+      element: <Signup/>,
+    },
+    
 
   ])
 
