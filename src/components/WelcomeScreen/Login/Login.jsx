@@ -46,7 +46,7 @@ export default function Login () {
 
 
                         <div className="flex justify-end w-full p-1">
-                                <span className="inline-block font-bold text-right text-[#2c14dd]"><a href="#" >Forgot Password?</a></span>
+                                <span className="inline-block font-bold text-right text-[#2c14dd]"><Link to="/forgotpassword">Forgot Password?</Link></span>
                         </div>
                   </div>
                 {/* form-end */}
