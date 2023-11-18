@@ -18,12 +18,12 @@ export default function Login () {
   }
   return (
     <>
-    <div className="flex flex-col items-stretch w-full h-screen bg-[rgba(44,20,221,0.02)]">
+    <div className="flex flex-col items-stretch w-full h-screen bg-[rgba(44,20,221,0.06)]">
         <Signheader message = "Login"/>
 
         <div className="mt-7 h-1/2">
                   <div className="px-5">
-                        <h1 className="text-3xl font-bold">
+                        <h1 className="text-3xl text-[#282061] font-bold">
                           Welcome back
                         </h1>
 

@@ -5,6 +5,7 @@ import SplashScreen from './components/WelcomeScreen/SplashScreen/SplashScreen'
 import Login from './components/WelcomeScreen/Login/Login'
 import Signup from './components/WelcomeScreen/Signup/Signup'
 import Forgotpassword from './components/WelcomeScreen/Forgotpassword/Forgotpassword'
+import Emailsent from './components/WelcomeScreen/Emailsent/Emailsent'
 
 
 function App() {
@@ -24,6 +25,10 @@ function App() {
     {
       path: "/forgotpassword",
       element: <Forgotpassword/>,
+    },
+    {
+      path: "/emailsent",
+      element: <Emailsent/>,
     },
     
 

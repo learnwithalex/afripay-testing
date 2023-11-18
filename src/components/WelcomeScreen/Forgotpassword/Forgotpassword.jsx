@@ -4,7 +4,7 @@ import Signheader from "../Login/SignHeader";
 export default function Forgotpassword() {
   return (
     <>
-    <div className="flex flex-col items-stretch w-full h-screen bg-[rgba(44,20,221,0.02)]">
+    <div className="flex flex-col items-stretch w-full h-screen bg-[rgba(44,20,221,0.06)]">
 
         <Signheader message="Forgot Password" />
 

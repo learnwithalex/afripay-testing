@@ -17,7 +17,7 @@ export default function Signup() {
       }
   return (
     <>
-     <div className="flex flex-col items-stretch w-full h-screen bg-[rgba(44,20,221,0.02)]">
+     <div className="flex flex-col items-stretch w-full h-screen bg-[rgba(44,20,221,0.06)]">
         <Signheader message="Signup"/>
 
         <div className="mt-7 h-1/2">
