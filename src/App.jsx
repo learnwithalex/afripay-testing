@@ -10,6 +10,7 @@ import Emaildelivered from './components/WelcomeScreen/Emaildelivered/Emaildeliv
 import Onboarding1 from './components/OnboardingScreen/Onboarding1'
 import Onboarding2 from './components/OnboardingScreen/Onboarding2'
 import Onboarding3 from './components/OnboardingScreen/Onboarding3'
+import Welcome from './components/WelcomeScreen/Welcomepage/Welcome'
 
 
 function App() {
@@ -49,6 +50,10 @@ function App() {
     {
       path: "/onboarding3",
       element: <Onboarding3/>,
+    },
+    {
+      path: "/welcome",
+      element: <Welcome/>,
     },
 
     
