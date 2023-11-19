@@ -17,7 +17,7 @@ export default function Welcome() {
         </div>
 
         <div className="h-1/2 w-full flex items-end justify-center p-5">
-                <button className="focus:outline-none text-white rounded-[50px] inline-block bg-blue w-full py-4">
+                <button className="focus:outline-none text-white rounded-[50px] inline-block bg-blue w-full py-4 text-lg">
                     <Link to="/getstarted">Let's get started</Link>
                 </button>
                 
