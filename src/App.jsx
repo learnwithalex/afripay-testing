@@ -1,11 +1,12 @@
 import './assets/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import './App.css'
-import SplashScreen from './components/WelcomeScreen/SplashScreen/SplashScreen'
+import SplashScreen from './components/SplashScreen/SplashScreen'
 import Login from './components/WelcomeScreen/Login/Login'
 import Signup from './components/WelcomeScreen/Signup/Signup'
 import Forgotpassword from './components/WelcomeScreen/Forgotpassword/Forgotpassword'
 import Emailsent from './components/WelcomeScreen/Emailsent/Emailsent'
+import Emaildelivered from './components/WelcomeScreen/Emaildelivered/Emaildelivered'
 
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
     {
       path: "/emailsent",
       element: <Emailsent/>,
+    },
+    {
+      path: "/emaildelivered",
+      element: <Emaildelivered/>,
     },
     
 
