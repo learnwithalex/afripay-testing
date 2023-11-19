@@ -5,12 +5,14 @@ import SplashScreen from './components/SplashScreen/SplashScreen'
 import Login from './components/WelcomeScreen/Login/Login'
 import Signup from './components/WelcomeScreen/Signup/Signup'
 import Forgotpassword from './components/WelcomeScreen/Forgotpassword/Forgotpassword'
-import Emailsent from './components/WelcomeScreen/Emailsent/Emailsent'
+import Emailverification from './components/WelcomeScreen/Emailverification/Emailverification'
 import Emaildelivered from './components/WelcomeScreen/Emaildelivered/Emaildelivered'
 import Onboarding1 from './components/OnboardingScreen/Onboarding1'
 import Onboarding2 from './components/OnboardingScreen/Onboarding2'
 import Onboarding3 from './components/OnboardingScreen/Onboarding3'
 import Welcome from './components/WelcomeScreen/Welcomepage/Welcome'
+import Getstarted from './components/WelcomeScreen/Getstarted/Getstarted'
+import Accountverified from './components/WelcomeScreen/Accountverified/Accountverified'
 
 
 function App() {
@@ -32,8 +34,8 @@ function App() {
       element: <Forgotpassword/>,
     },
     {
-      path: "/emailsent",
-      element: <Emailsent/>,
+      path: "/emailverification",
+      element: <Emailverification/>,
     },
     {
       path: "/emaildelivered",
@@ -54,6 +56,14 @@ function App() {
     {
       path: "/welcome",
       element: <Welcome/>,
+    },
+    {
+      path: "/getstarted",
+      element: <Getstarted/>,
+    },
+    {
+      path: "/accountverified",
+      element: <Accountverified/>,
     },
 
     
