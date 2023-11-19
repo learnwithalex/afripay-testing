@@ -9,7 +9,9 @@ export default {
     colors: {
     secondary: "var(--secondary)",
     blue : "var(--blue)",
-    dull : "var(--dull)",
+    dull : "var(--dull-blue)",
+    fading : "var(--fading-blue)",
+    txtblue : "var(--txt-blue)",
     },
     boxShadow: {
     ssss: "var(--ssss)",

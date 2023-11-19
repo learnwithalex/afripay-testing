@@ -7,6 +7,9 @@ import Signup from './components/WelcomeScreen/Signup/Signup'
 import Forgotpassword from './components/WelcomeScreen/Forgotpassword/Forgotpassword'
 import Emailsent from './components/WelcomeScreen/Emailsent/Emailsent'
 import Emaildelivered from './components/WelcomeScreen/Emaildelivered/Emaildelivered'
+import Onboarding1 from './components/OnboardingScreen/Onboarding1'
+import Onboarding2 from './components/OnboardingScreen/Onboarding2'
+import Onboarding3 from './components/OnboardingScreen/Onboarding3'
 
 
 function App() {
@@ -35,6 +38,19 @@ function App() {
       path: "/emaildelivered",
       element: <Emaildelivered/>,
     },
+    {
+      path: "/onboarding",
+      element: <Onboarding1/>,
+    },
+    {
+      path: "/onboarding2",
+      element: <Onboarding2/>,
+    },
+    {
+      path: "/onboarding3",
+      element: <Onboarding3/>,
+    },
+
     
 
   ])

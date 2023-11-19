@@ -61,7 +61,7 @@ export default function Login () {
                         <button className=" px-5 py-2 text-[rgb(44,20,221)] bg-[rgba(44,20,221,0.1)] rounded-[50px] outline-[#2c14dd]focus:outline-none">
                         <Link to="/signup">Register</Link> 
                           </button>
-                        <button className="w-1/2 px-5 py-3 text-white bg-[#2c14dd] rounded-[50px] focus:outline-none">Login</button>
+                        <button className="w-1/2 px-5 py-4 text-white bg-[#2c14dd] rounded-[50px] focus:outline-none">Login</button>
                 </div>
         </footer>
         {/* button footer end */}
