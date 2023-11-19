@@ -31,22 +31,23 @@ export default function Login () {
                   </div>
 
               {/* form-start */}
-                  <div className="px-6 my-5 form-group">
+                  <div className="px-5 my-5 form-group">
                   
                           <div className="w-full px-3 py-1 my-5 bg-white rounded-2xl email-form">
                                 <label htmlFor="email" className="px-2 text-sm">Email</label>
-                                <input type="text" name="email" id="email" placeholder="Louis04real@gmail.com" className="w-full px-2 py-1 text-lg bg-none focus:outline-none" />
+                                <input type="text" name="email" id="email" placeholder="Louis04real@gmail.com" className="w-full px-2 py-1 text-md bg-none focus:outline-none" />
                           </div>
 
-                          <div className="relative w-full px-3 py-1 my-5 bg-white rounded-2xl password-form">
+                          <div className="relative w-full px-3 py-1 mt-5 bg-white rounded-2xl password-form">
                                 <label htmlFor="password" className="px-2 text-sm">Password</label>
                                 <input type="password" name="password" id="password" className="w-full px-2 py-1 text-lg bg-none focus:outline-none" />
-                                <i onClick={e=>{togglePassword(e)}}  id="eyeIcon" className="absolute fas fa-eye right-[20px] text-xl top-[20px]"></i>
+                                <i onClick={e=>{togglePassword(e)}}  id="eyeIcon" className="text-[#2c14dd] absolute fas fa-eye right-[20px] text-lg top-[30px]"></i>
                           </div>
 
 
-                        <div className="flex justify-end w-full p-1">
-                                <span className="inline-block font-bold text-right text-[#2c14dd]"><Link to="/forgotpassword">Forgot Password?</Link></span>
+                        <div className="flex justify-end mt-2 w-full">
+                                <span className="inline-block font-semibold text-right text-[#2c14dd]">
+                                  <Link to="/forgotpassword">Forgot Password?</Link></span>
                         </div>
                   </div>
                 {/* form-end */}
@@ -57,10 +58,10 @@ export default function Login () {
         {/* button-footer-start */}
         <footer className="flex items-end w-full h-1/2">
                 <div className="flex items-center w-full p-3 justify-evenly btn-group">
-                        <button className=" px-5 py-2  text-[#2c14dd] bg-[rgba(44,20,221,0.02)] rounded-[50px] outline-[#2c14dd] focus:outline-none">
+                        <button className=" px-5 py-2 text-[rgb(44,20,221)] bg-[rgba(44,20,221,0.1)] rounded-[50px] outline-[#2c14dd]focus:outline-none">
                         <Link to="/signup">Register</Link> 
                           </button>
-                        <button className="w-1/2 px-5 py-5 text-white bg-[#2c14dd] rounded-[50px] focus:outline-none">Login</button>
+                        <button className="w-1/2 px-5 py-3 text-white bg-[#2c14dd] rounded-[50px] focus:outline-none">Login</button>
                 </div>
         </footer>
         {/* button footer end */}

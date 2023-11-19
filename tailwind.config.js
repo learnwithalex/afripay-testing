@@ -8,6 +8,8 @@ export default {
     extend: {
     colors: {
     secondary: "var(--secondary)",
+    blue : "var(--blue)",
+    dull : "var(--dull)",
     },
     boxShadow: {
     ssss: "var(--ssss)",
