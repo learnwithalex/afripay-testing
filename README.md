@@ -1,8 +1,45 @@
-# React + Vite
+**To start project**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Open your terminal
 
-Currently, two official plugins are available:
+Run **"npm install"** to install node_modules 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Then run **"npm run dev"** to start project
+
+**Routing guide**
+
+      path: "/",
+      page: SplashScreen
+      
+      path: "/login",
+      page: Login page
+      
+      path: "/signup",
+      page: Signup page
+
+      path: "/forgotpassword",
+      page: Forgotpassword page
+      
+      path: "/emailverification"
+      page: Emailverification page
+
+      path: "/emaildelivered",
+      page: Emaildelivered page
+      
+      path: "/onboarding",
+      page: Onboarding1 page
+      
+      path: "/onboarding2",
+      page: Onboarding2 page
+      
+      path: "/onboarding3",
+      page: <Onboarding3 page
+      
+      path: "/welcome",
+      page: Welcome page
+      
+      path: "/getstarted",
+      page: Getstarted page
+      
+      path: "/accountverified",
+      page: Accountverified page
