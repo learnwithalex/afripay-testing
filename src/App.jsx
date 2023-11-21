@@ -13,6 +13,7 @@ import Onboarding3 from './components/OnboardingScreen/Onboarding3'
 import Welcome from './components/WelcomeScreen/Welcomepage/Welcome'
 import Getstarted from './components/WelcomeScreen/Getstarted/Getstarted'
 import Accountverified from './components/WelcomeScreen/Accountverified/Accountverified'
+import Setpassword from './components/Setpassword/Setpassword'
 
 
 function App() {
@@ -65,7 +66,10 @@ function App() {
       path: "/accountverified",
       element: <Accountverified/>,
     },
-
+    {
+      path: "/setpassword",
+      element: <Setpassword/>,
+    },
     
 
   ])
