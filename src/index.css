@@ -16,3 +16,7 @@
 --fading-blue : #FFFFFF26;
 --txt-blue : #13085E;
 }
+
+.blue-gradient{
+    background-image: linear-gradient(to bottom , #2C14DD , #432DEC) !important;
+}

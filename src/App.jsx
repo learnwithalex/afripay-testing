@@ -14,6 +14,9 @@ import Welcome from './components/WelcomeScreen/Welcomepage/Welcome'
 import Getstarted from './components/WelcomeScreen/Getstarted/Getstarted'
 import Accountverified from './components/WelcomeScreen/Accountverified/Accountverified'
 import Setpassword from './components/Setpassword/Setpassword'
+import Screenload from './components/Screenload/Screenload'
+import Profile from './components/Profile/Profile'
+import Myaccount from './components/Myaccount/Myaccount'
 
 
 function App() {
@@ -70,6 +73,22 @@ function App() {
       path: "/setpassword",
       element: <Setpassword/>,
     },
+    {
+      path: "/screenload",
+      element: <Screenload/>,
+    },
+    {
+      path: "/profile",
+      element: <Profile/>,
+    },
+    {
+      path: "/myaccount",
+      element: <Myaccount/>,
+    },
+    
+   
+   
+    
     
 
   ])
