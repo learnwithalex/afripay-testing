@@ -43,3 +43,15 @@ Then run **"npm run dev"** to start project
       
       path: "/accountverified",
       page: Accountverified page
+
+      path: "/setpassword",
+      page: Setpassword page
+
+      path: "/screenload",
+      page: Screenload page
+
+      path: "/profile",
+      page: Profile page
+
+      path: "/myaccount",
+      page: My Account page
