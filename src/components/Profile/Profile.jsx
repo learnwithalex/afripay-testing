@@ -4,10 +4,33 @@ import user from "../../assets/svgs/user.svg"
 import gear from "../../assets/svgs/Cog.svg"
 import Phone from "../../assets/svgs/Phone.svg"
 import question from "../../assets/svgs/Question Circle.svg"
-import chevron from "../../assets/svgs/Chevron-Right.svg"
-import {Link} from "react-router-dom"
+import Profiletab from "./Profiletabs"
 
 export default function Profile() {
+
+    var profileInfo  = [
+        {
+            head : 'My Account',
+            image : user,
+            link: '/myaccount'
+        } , 
+        {
+            head : 'Settings',
+            image : gear,
+            link: '/settings'
+        } , 
+        {
+            head : 'Help Center',
+            image : question,
+            link: '/helpcenter'
+        } , 
+        {
+            head : 'Contact',
+            image : Phone,
+            link: '/contact'
+        } , 
+    ]
+
   return (
     <>
     <div className="h-screen w-full gradient text-white">
@@ -29,55 +52,16 @@ export default function Profile() {
 
         <section className="h-full bg-[#F4F7FE] rounded-s-[40px] rounded-e-[40px] p-5">
 
-                <Link to="/myaccount">
-                <aside className="profile-tab w-full p-3 my-3 flex item-center justify-between">
-                    <div className="flex items-center">
-                        <div className="icon h-full bg-[#e9e9ff] p-2 rounded-xl inline-block">
-                            <img src={user} className="inline-block" alt="" />
-                        </div> 
-                        <p className="inline-block font-semibold text-black ml-4">My Account</p>
-                    </div>
+                
+                {/* function to display all tabs dynammically start */}
+            { profileInfo.map( (profile , i)=> (
+                                <Profiletab title = {profile.head} link = {profile.link} image = {profile.image} key={i}/>
+                         )) 
+                         
+            }
+            {/* function to display all tabs dynammically end */}
 
-                    <img src={chevron} alt="" />
-                        
-                </aside>
-                </Link>
-
-                <aside className="profile-tab w-full p-3 my-3 flex item-center justify-between">
-                    <div className="flex items-center">
-                        <div className="icon h-full bg-[#e9e9ff] p-2 rounded-xl inline-block">
-                            <img src={gear} className="inline-block" alt="" />
-                        </div> 
-                        <p className="inline-block font-semibold text-black ml-4">My Settings</p>
-                    </div>
-
-                    <img src={chevron} alt="" />
-                        
-                </aside>
-
-                <aside className="profile-tab w-full p-3 my-3 flex item-center justify-between">
-                    <div className="flex items-center">
-                        <div className="icon h-full bg-[#e9e9ff] p-2 rounded-xl inline-block">
-                            <img src={question} className="inline-block" alt="" />
-                        </div> 
-                        <p className="inline-block font-semibold text-black ml-4">Help Center</p>
-                    </div>
-
-                    <img src={chevron} alt="" />
-                        
-                </aside>
-
-                <aside className="profile-tab w-full p-3 my-3 flex item-center justify-between">
-                    <div className="flex items-center">
-                        <div className="icon h-full bg-[#e9e9ff] p-2 rounded-xl inline-block">
-                            <img src={Phone} className="inline-block" alt="" />
-                        </div> 
-                        <p className="inline-block font-semibold text-black ml-4">Contact</p>
-                    </div>
-
-                    <img src={chevron} alt="" />
-                        
-                </aside>
+                
 
                 <p className="text-[#A2A0A8] mt-20 text-[15px] text-center">
                 You joined Brees on September 2021. It’s been 1 month since then and our mission is still the same, help you better manage your finance like a brees.</p>

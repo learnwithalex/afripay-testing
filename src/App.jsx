@@ -17,6 +17,8 @@ import Setpassword from './components/Setpassword/Setpassword'
 import Screenload from './components/Screenload/Screenload'
 import Profile from './components/Profile/Profile'
 import Myaccount from './components/Myaccount/Myaccount'
+import Settings from './components/Settings/Settings'
+import Resetpassword from './components/Reset-Password/Resetpassword'
 
 
 function App() {
@@ -84,6 +86,14 @@ function App() {
     {
       path: "/myaccount",
       element: <Myaccount/>,
+    },
+    {
+      path: "/settings",
+      element: <Settings/>,
+    },
+    {
+      path: "/reset-password",
+      element: <Resetpassword/>,
     },
     
    

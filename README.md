@@ -55,3 +55,9 @@ Then run **"npm run dev"** to start project
 
       path: "/myaccount",
       page: My Account page
+
+      path: "/settings",
+      page: My Account page
+
+      path: "/reset-Password",
+      page: My Account page
