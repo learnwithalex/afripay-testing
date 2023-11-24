@@ -19,6 +19,8 @@ import Profile from './components/Profile/Profile'
 import Myaccount from './components/Myaccount/Myaccount'
 import Settings from './components/Settings/Settings'
 import Resetpassword from './components/Reset-Password/Resetpassword'
+import Notification from './components/Notification/Notification'
+import Help from './components/Helpcenter/Help'
 
 
 function App() {
@@ -95,7 +97,14 @@ function App() {
       path: "/reset-password",
       element: <Resetpassword/>,
     },
-    
+    {
+      path: "/notification",
+      element: <Notification/>,
+    },
+    {
+      path: "/helpcenter",
+      element: <Help/>,
+    },
    
    
     
