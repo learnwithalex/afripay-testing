@@ -21,6 +21,7 @@ import Settings from './components/Settings/Settings'
 import Resetpassword from './components/Reset-Password/Resetpassword'
 import Notification from './components/Notification/Notification'
 import Help from './components/Helpcenter/Help'
+import Topicdetails from './components/Helpcenter/Topicdetails'
 
 
 function App() {
@@ -105,6 +106,10 @@ function App() {
       path: "/helpcenter",
       element: <Help/>,
     },
+    {
+      path: "/topicdetails",
+      element: <Topicdetails/>,
+    }
    
    
     

@@ -28,7 +28,7 @@ export default function Profile() {
             head : 'Contact',
             image : Phone,
             link: '/contact'
-        } , 
+        } 
     ]
 
   return (
