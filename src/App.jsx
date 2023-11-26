@@ -22,6 +22,7 @@ import Resetpassword from './components/Reset-Password/Resetpassword'
 import Notification from './components/Notification/Notification'
 import Help from './components/Helpcenter/Help'
 import Topicdetails from './components/Helpcenter/Topicdetails'
+import Insights from './components/Insights/Insights'
 
 
 function App() {
@@ -109,14 +110,12 @@ function App() {
     {
       path: "/topicdetails",
       element: <Topicdetails/>,
+    },
+    {
+      path: "/insight",
+      element: <Insights/>,
     }
-   
-   
-    
-    
-
   ])
-
 
   return (
     <RouterProvider router={router} /> 
