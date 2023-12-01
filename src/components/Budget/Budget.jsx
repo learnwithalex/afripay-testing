@@ -5,39 +5,16 @@ import ProfileOutline from "../../assets/svgs/light-profile.png";
 import InsightIcon from "../../assets/images/insight-icon.png";
 import pig from "../../assets/pig.png";
 import Insightscard from "./Insightscard";
-import one from "./images/1.png";
-import two from "./images/2.png";
-import three from "./images/3.png";
-import four from "./images/4.png";
-import five from "./images/5.png";
-import six from "./images/6.png";
 import close from "./images/close.png";
 import frame from "./images/frame.png";
 
 
-const Insights = () => {
 
-        const newCard = [
-                [ 'Brees' , four , 'click here to view insights' ] , 
-                [ 'Paystack' , five ] , 
-                [ 'Piggyvest' , six ] 
-        ];
-
-        const viewedCard = [
-                [ 'Carbon' , two ] , 
-                [ 'Abeg' , three ] , 
-                [ 'Patricia' , one ] 
-        ];
-
-        const modalOpened = true;
-
-        const closeModal = (e) => {
-                e.target.parentElement.parentElement.style.display = 'none';
-        }
-
+const Budget = () => {
 
     return (
-        <main>
+        <>
+            <main>
                  <aside className="modal px-5 absolute h-full w-full z-10 backdrop-blur-[2px] flex items-center justify-center">
                                 <div className="inner-modal text-white text-center bg-[#2C14DD] h-[600px] w-full rounded-3xl relative">
                                         <img src={close} onClick={e=>{closeModal(e)}} className="absolute top-5 right-5" alt="" />
@@ -132,9 +109,8 @@ const Insights = () => {
                     <img src={ProfileOutline} alt="" />
                 </footer>
         </main>
-        
-                
+        </>
     );
 }
 
-export default Insights;
+export default Budget;

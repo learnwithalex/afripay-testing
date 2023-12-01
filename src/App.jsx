@@ -23,6 +23,8 @@ import Notification from './components/Notification/Notification'
 import Help from './components/Helpcenter/Help'
 import Topicdetails from './components/Helpcenter/Topicdetails'
 import Insights from './components/Insights/Insights'
+import Insightstory from './components/Insights/Insightsstory/Insightstory'
+import Budget from './components/Budget/Budget'
 
 
 function App() {
@@ -114,6 +116,14 @@ function App() {
     {
       path: "/insight",
       element: <Insights/>,
+    },
+    {
+      path: "/insightstory",
+      element: <Insightstory/>,
+    },
+    {
+      path: "/budget",
+      element: <Budget/>,
     }
   ])
 
