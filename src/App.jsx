@@ -13,6 +13,18 @@ import Onboarding3 from './components/OnboardingScreen/Onboarding3'
 import Welcome from './components/WelcomeScreen/Welcomepage/Welcome'
 import Getstarted from './components/WelcomeScreen/Getstarted/Getstarted'
 import Accountverified from './components/WelcomeScreen/Accountverified/Accountverified'
+import Setpassword from './components/Setpassword/Setpassword'
+import Screenload from './components/Screenload/Screenload'
+import Profile from './components/Profile/Profile'
+import Myaccount from './components/Myaccount/Myaccount'
+import Settings from './components/Settings/Settings'
+import Resetpassword from './components/Reset-Password/Resetpassword'
+import Notification from './components/Notification/Notification'
+import Help from './components/Helpcenter/Help'
+import Topicdetails from './components/Helpcenter/Topicdetails'
+import Insights from './components/Insights/Insights'
+import Insightstory from './components/Insights/Insightsstory/Insightstory'
+import Budget from './components/Budget/Budget'
 
 
 function App() {
@@ -65,11 +77,55 @@ function App() {
       path: "/accountverified",
       element: <Accountverified/>,
     },
-
-    
-
+    {
+      path: "/setpassword",
+      element: <Setpassword/>,
+    },
+    {
+      path: "/screenload",
+      element: <Screenload/>,
+    },
+    {
+      path: "/profile",
+      element: <Profile/>,
+    },
+    {
+      path: "/myaccount",
+      element: <Myaccount/>,
+    },
+    {
+      path: "/settings",
+      element: <Settings/>,
+    },
+    {
+      path: "/reset-password",
+      element: <Resetpassword/>,
+    },
+    {
+      path: "/notification",
+      element: <Notification/>,
+    },
+    {
+      path: "/helpcenter",
+      element: <Help/>,
+    },
+    {
+      path: "/topicdetails",
+      element: <Topicdetails/>,
+    },
+    {
+      path: "/insight",
+      element: <Insights/>,
+    },
+    {
+      path: "/insightstory",
+      element: <Insightstory/>,
+    },
+    {
+      path: "/budget",
+      element: <Budget/>,
+    }
   ])
-
 
   return (
     <RouterProvider router={router} /> 

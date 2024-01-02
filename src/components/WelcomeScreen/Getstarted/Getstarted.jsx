@@ -32,7 +32,7 @@ export default function Getstarted() {
             <div className="bg-gradient bg-gradient-to-b from-[#2C14DD] to-[#432DEC] h-screen w-full">
               <div className=" h-full w-full items-center justify-center">
                     <div className="w-full text-right p-5">
-                        <button className="focus:outline-none bg-fading text-white inline-block px-5 py-2 mt-5 rounded-[50px]">
+                        <button className="focus:outline-none bg-fading text-white inline-block px-5 py-2 mt-2 rounded-[50px]">
                         <Link to="/signup">Skip</Link>
                         </button>
                     </div>
@@ -42,7 +42,7 @@ export default function Getstarted() {
                             <p className="text-[#D5D0FB] text-md">Get most out of your afripay account</p>
                         </div>
 
-                    <div className="w-full px-5  flex flex-col gap-[25px]">
+                    <div className="w-full px-5 relative top-[-50px] flex flex-col gap-[10px]">
                          { cardInformation.map( (cardInfo , i)=> (
                                 <Getstartedcard key={i}  heado ={cardInfo.head} subheading ={cardInfo.subheading} image ={cardInfo.image} />
                          )) 
